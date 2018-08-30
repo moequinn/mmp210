@@ -1,0 +1,25 @@
+body {
+    background-color: rgba(204,248,212,0.6);
+    font-family: "helvetica", cursive, sans-serif;
+    text-align: center;
+    margin-top: 10%;
+}
+
+h1 {
+}
+
+img {
+    width: 100%;
+}
+
+.line {
+    padding: 0px;
+}
+
+.box {
+    padding: 5px;
+}
+
+a:hover { 
+    background-color: rgba(204,248,212,1.0);
+}
