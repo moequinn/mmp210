@@ -9,16 +9,16 @@ function draw() {
 	
 	// face
 	fill("lightgreen");
-	rect(100, 50, 200, 250);
+	ellipse(320, 180, 200, 250);
 	
 	// eyes
 	fill("blue");
-	ellipse(150, 150, 50, 100);
-	ellipse(250, 150, 40, 80);
+	ellipse(280, 150, 50, 100); //left
+	ellipse(250, 150, 40, 80); //right
 	
 	// ears
 	fill("yellow");
-	ellipse(150, 150, 40, 40);
+	ellipse(220, 150, 40, 40);
 	ellipse(250, 150, 30, 30);
 
 	// mouth
