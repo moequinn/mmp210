@@ -7,21 +7,31 @@ function draw() {
 	background("white");
 	noStroke();
 	
+    // body
+	fill("blue");
+	ellipse(320, 340, 250, 250);
+    
 	// face
-	fill("lightgreen");
+	fill("tan");
 	ellipse(320, 180, 200, 250);
 	
-	// eyes
-	fill("blue");
+	// outter_eyes 
+	fill("white");
 	ellipse(280, 150, 50, 100); //left
-	ellipse(250, 150, 40, 80); //right
+	ellipse(350, 150, 40, 80); //right
 	
-	// ears
-	fill("yellow");
-	ellipse(220, 150, 40, 40);
-	ellipse(250, 150, 30, 30);
+	// mid_eyes
+	fill("brown");
+	ellipse(280, 150, 40, 40); //left
+	ellipse(350, 150, 30, 30); //right
+    
+    // pupil
+	fill("black");
+	ellipse(280, 150, 30, 30); //left
+	ellipse(350, 150, 20, 20); //right
 
 	// mouth
-	stroke("blue");
-	line(150, 250, 250, 280);
+	stroke("brown");
+	line(270, 270, 350, 290);
+    
 }
