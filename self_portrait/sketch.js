@@ -4,7 +4,7 @@ function setup() {
 }
 
 function draw() {
-	background("white");
+	background(204,248,212,0.6);
 	noStroke();
 	
     // body
@@ -15,24 +15,30 @@ function draw() {
     fill("White")
     triangle(260, 260, 320, 360, 380, 260);
     
-	// face
+	//hair
+	fill("black")
+	ellipse(320, 180, 185, 210);
+    
+    // face
 	fill("tan");
-	ellipse(320, 180, 200, 250);
+	ellipse(320, 190, 180, 210);
 	
 	// outter_eyes 
 	fill("white");
-	ellipse(280, 150, 40, 70); //my_left
-	ellipse(350, 150, 40, 70); //my_right
+	ellipse(280, 170, 40, 70); //my_left
+	ellipse(350, 170, 40, 70); //my_right
 	
 	// mid_eyes
 	fill("brown");
-	ellipse(280, 150, 30, 40); //my_left
-	ellipse(350, 150, 30, 40); //my_right
+	ellipse(280, 170, 30, 40); //my_left
+	ellipse(350, 170, 30, 40); //my_right
     
     // pupil
 	fill("black");
-	ellipse(280, 150, 20, 20); //my_left
-	ellipse(350, 150, 20, 20); //my_right
+	ellipse(280, 170, 20, 20); //my_left
+	ellipse(350, 170, 20, 20); //my_right
+    
+    
 
 	// mouth
 	stroke("brown");
