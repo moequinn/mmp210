@@ -36,13 +36,9 @@ function draw() {
     // pupil
 	fill("black");
 	ellipse(280, 170, 20, 20); //my_left
-	ellipse(350, 170, 20, 20); //my_right
-    
-    
+	ellipse(350, 170, 20, 20); //my_right 
 
 	// mouth
 	stroke("brown");
-	line(270, 250, 350, 270);
-    
-    
+	line(270, 250, 350, 270);   
 }
