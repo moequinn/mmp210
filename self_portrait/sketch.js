@@ -4,18 +4,18 @@ function setup() {
 }
 
 function draw() {
-	background(204,248,212,0.6);
-	noStroke();
+       background(204,248,212,0.6);
+       noStroke();
 	
     // body
-	fill("blue");
-	ellipse(320, 340, 250, 250);
+       fill("blue");
+       ellipse(320, 340, 250, 250);
     
     // front_layer
-    fill("White")
-    triangle(260, 260, 320, 360, 380, 260);
+       fill("White")
+       triangle(260, 260, 320, 360, 380, 260);
     
-	//hair
+    // hair
 	fill("black")
 	ellipse(320, 180, 185, 210);
     
@@ -38,7 +38,7 @@ function draw() {
 	ellipse(280, 170, 20, 20); //my_left
 	ellipse(350, 170, 20, 20); //my_right 
 
-	// mouth
-	stroke("brown");
-	line(270, 250, 350, 270);   
+    // mouth
+        stroke("brown");
+        line(270, 250, 350, 270);   
 }
