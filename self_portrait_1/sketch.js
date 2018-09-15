@@ -27,33 +27,81 @@ function draw() {
     
     
     // front_layer
-       fill("White")
+       fill(frontlayercolor)
        triangle(frontlayerx1, frontlayery1, frontlayerx2, frontlayery2, frontlayerx3, frontlayery3);
     
+    var haircolor ="black"
+    var hairx = 320
+    var hairy = 180
+    var hairwidth = 185
+    var hairheight = 210
+    
     // hair
-	fill("black")
-	ellipse(320, 180, 185, 210);
+	fill(haircolor)
+	ellipse(hairx , hairy, hairwidth, hairheight);
+    
+    var facecolor = "tan"
+    var facex = 320
+    var facey = 190
+    var facewidth = 180
+    var faceheight = 210
     
     // face
-	fill("tan");
-	ellipse(320, 190, 180, 210);
+	fill(facecolor);
+	ellipse(facex, facey, facewidth, faceheight);
+    
+    var oeyescolor = "white"
+    var oeyeslx = 280
+    var oeyesly = 170
+    var oeyeslw = 40
+    var oeyeslh = 70
+    var oeyesrx = 350
+    var oeyesry = 170
+    var oeyesrw = 40
+    var oeyesrh = 70
 	
 	// outter_eyes 
-	fill("white");
-	ellipse(280, 170, 40, 70); //my_left
-	ellipse(350, 170, 40, 70); //my_right
+	fill(oeyescolor);
+	ellipse(oeyeslx, oeyesly, oeyeslw, oeyeslh); //my_left
+	ellipse(oeyesrx, oeyesry, oeyesrw, oeyesrh); //my_right
+    
+    var mideyescolor = "brown"
+    var mideyeslx = 280
+    var mideyesly = 170
+    var mideyeslw = 30
+    var mideyeslh = 40
+    var mideyesrx = 350
+    var mideyesry = 170
+    var mideyesrw = 30
+    var mideyesrh = 40
 	
 	// mid_eyes
-	fill("brown");
-	ellipse(280, 170, 30, 40); //my_left
-	ellipse(350, 170, 30, 40); //my_right
+	fill(mideyescolor);
+	ellipse(mideyeslx, mideyesly, mideyeslw, mideyeslh); //my_left
+	ellipse(mideyesrx, mideyesry, mideyesrw, mideyesrh); //my_right
+    
+    var pupilcolor = "black"
+    var pupillx = 280
+    var pupilly = 170
+    var pupillw = 20
+    var pupillh = 20
+    var pupilrx = 350
+    var pupilry = 170
+    var pupilrw = 20
+    var pupilrh = 20
     
     // pupil
-	fill("black");
-	ellipse(280, 170, 20, 20); //my_left
-	ellipse(350, 170, 20, 20); //my_right 
+	fill(pupilcolor);
+	ellipse(pupillx, pupilly, pupillw, pupillh); //my_left
+	ellipse(pupilrx, pupilry, pupilrw, pupilrh); //my_right
+    
+    var mouthcolor = "brown"
+    var mouthx = 270
+    var mouthy = 250
+    var mouthw = 350
+    var mouthh = 270
 
     // mouth
-        stroke("brown");
-        line(270, 250, 350, 270);   
+       stroke(mouthcolor);
+       line(mouthx, mouthy, mouthw, mouthh);   
 }
