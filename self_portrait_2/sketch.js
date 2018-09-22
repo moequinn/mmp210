@@ -1,4 +1,4 @@
-// self portrait
+// self portrait Version 3 - Interaction
 function setup() {
 	createCanvas(640, 360);
     rectMode(CENTER);
@@ -11,12 +11,15 @@ function draw() {
 // background interaction
     var r1 = map(mouseX, 0, width, 0, height);
     var r2 = height - r1;
+    var r = map(mouseX, 0, 600, 0, 255);
+    var b = map(mouseX, 0, 600, 255, 0);
   
-    fill(237,34,193,r1);
+    fill(r, 0, b, r1);
     rect(width/2 + r1/2, height/2, r1, r1);
   
-    fill(237,34,3,r2);
-    rect(width/2 - r2/2, height/2, r2, r2); // end of background code  
+    fill(b, 0 , r, r2);
+    rect(width/2 - r2/2, height/2, r2, r2); 
+// end of background code  
 	
 // body
     var bodyColor = "blue"
@@ -26,7 +29,8 @@ function draw() {
     var bodyheight = 250
     
     fill(bodyColor);
-    ellipse(bodyx, bodyy, bodywidth, bodyheight); // end of body code
+    ellipse(bodyx, bodyy, bodywidth, bodyheight); 
+// end of body code
     
 // front layer
     var frontlayercolor = "white"
@@ -93,7 +97,7 @@ function draw() {
 	fill(mideyescolor);
 	ellipse(mideyeslx, mideyesly, mideyeslw, mideyeslh); //my_left
 	ellipse(mideyesrx, mideyesry, mideyesrw, mideyesrh); //my_right
-// mid eyes
+// end of mid eyes code
     
 // pupil
     var pupilcolor = "black"
