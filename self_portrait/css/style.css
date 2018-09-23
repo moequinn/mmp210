@@ -23,12 +23,12 @@ img {
 
 .line {
     padding: 1px;
+    margin-bottom: 12px
 }
 
 
 .button {
-    margin-bottom: 10px;
-    padding: 1px;
+    padding: 10px;
     font-size: 12px;
     display: inline;
     width: 150px;
