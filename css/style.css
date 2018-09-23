@@ -23,6 +23,7 @@ img {
 
 .line {
     padding: 1px;
+    margin-bottom: 12px
 }
 
 
@@ -55,4 +56,9 @@ a: {
 
 a:hover { 
     background-color: rgba(204,248,212,1.0);
+}
+
+.footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
