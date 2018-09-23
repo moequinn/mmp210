@@ -18,7 +18,7 @@ function draw() {
     rect(width/2 + r1/2, height/2, r1, r1);
   
     fill(b, 0 , r, r2);
-    rect(width/2 - r2/2, height/2, r2, r2); 
+    rect(width/2 - r2/2, height/2, r2, r2);
 // end of background code  
 	
 // body

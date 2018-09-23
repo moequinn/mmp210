@@ -1,12 +1,22 @@
 body {
-    background-color: rgba(204,248,212,0.6);
+    background-image: radial-gradient(rgba(130, 141, 215, 0.5), rgba(135, 120, 215, 0.5), rgba(110, 191, 215, 0.5));
     font-family: "helvetica", cursive, sans-serif;
     text-align: center;
     margin-top: 10%;
 }
 
 h1 {
+    font-size: 48px;
 }
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 24px;
+}
+
 
 img {
     width: 100%;
@@ -18,6 +28,7 @@ img {
 
 .box {
     padding: 5px;
+    font-size: 24px;
 }
 
 a:hover { 
