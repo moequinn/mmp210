@@ -112,7 +112,7 @@ function draw() {
     
 	fill(pupilcolor);
 	ellipse(mouseX, mouseY, pupillw, pupillh); //my_left
-	ellipse(mouseX + 50, mouseY, pupilrw, pupilrh); //my_right
+	ellipse(mouseX + 70, mouseY, pupilrw, pupilrh); //my_right
 // end of pupil code
     
 // mouth
