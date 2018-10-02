@@ -101,8 +101,8 @@ function draw() {
     
 // pupil
     var pupilcolor = "black";
-    var pupillx = mouseX;
-    var pupilly = mouseY;
+    var pupillx = 280;
+    var pupilly = 170;
     var pupillw = 20;
     var pupillh = 20;
     var pupilrx = mouseX;
@@ -111,8 +111,9 @@ function draw() {
     var pupilrh = 20;
     
 	fill(pupilcolor);
-	ellipse(mouseX, mouseY, pupillw, pupillh); //my_left
-	ellipse(mouseX + 50, mouseY, pupilrw, pupilrh); //my_right
+    var xOffset = map(mouseX, 0, width, -10, 10);
+	ellipse(pupillx + xOffset, pupilly, pupillw, pupillh); //my_left
+	//ellipse(mouseX + 70, mouseY, pupilrw, pupilrh); //my_right
 // end of pupil code
     
 // mouth
