@@ -111,14 +111,10 @@ function draw() {
     var pupilrh = 20;
     
 	fill(pupilcolor);
-<<<<<<< HEAD
     var xOffset = map(mouseX, 0, width, -10, 10);
 	ellipse(pupillx + xOffset, pupilly, pupillw, pupillh); //my_left
 	//ellipse(mouseX + 70, mouseY, pupilrw, pupilrh); //my_right
-=======
-	ellipse(mouseX, mouseY, pupillw, pupillh); //my_left
-	ellipse(mouseX + 70, mouseY, pupilrw, pupilrh); //my_right
->>>>>>> da68c80b50fbd923a3609a9c02a3cbb4a2cf60ae
+    ellipse((pupillx + xOffset)+70, pupilly, pupillw, pupillh);
 // end of pupil code
     
 // mouth
