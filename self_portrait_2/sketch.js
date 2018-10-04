@@ -111,7 +111,7 @@ function draw() {
     var pupilrh = 20;
     
 	fill(pupilcolor);
-    var xOffset = map(mouseX, 0, width, -10, 10);
+    var xOffset = map(mouseX, 0, width, -8, 8);
 	ellipse(pupillx + xOffset, pupilly, pupillw, pupillh); //my_left
 	//ellipse(mouseX + 70, mouseY, pupilrw, pupilrh); //my_right
     ellipse((pupillx + xOffset)+70, pupilly, pupillw, pupillh);
