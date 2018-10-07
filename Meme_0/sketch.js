@@ -7,26 +7,39 @@
 
 //("squirrel-2936889_1280.jpg")
 
-var squirrel; // global
+    var squirrel; // global
+    var cw = 500;
+    var ch = 500;
 
 function preload() {
     squirrel = loadImage("squirrel-2936889_1280.jpg");
 }
 
 function setup() {
-    createCanvas(500, 500);
+    createCanvas(cw, ch);
 }
 
 function draw() {
     background(0);
     
-    image(squirrel, 0, 0, width, height);
+    var w = width;
+    var h = height;
+    var cenW = CENTER;
+    var cenH = CENTER;
+    
+    image(squirrel, 0, 0, w, h);
     //image(squirrel, 0, 0, width/2, height);
     //image(squirrel, width/2, 0, width/2, height);
     
-    fill(255);
-    textAlign(CENTER, CENTER);
-    textSize(50);
-    textFont("Comic Sans MS");
-    text("Did you said Nuts", width/2, height/2);
+    var col = 255;
+    var size = 50;
+    var font = "Roboto Condensed";
+    var w = width;
+    var h = height;
+    
+    fill(col);
+    textAlign(cenW, cenH);
+    textSize(size);
+    textFont(font);
+    text("Did you said Nuts", w/2, h/2);
 }
