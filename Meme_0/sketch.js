@@ -33,7 +33,7 @@ function draw() {
     
     var col = 255;
     var size = 50;
-    var font = "Roboto Condensed";
+    var font = "Impact";
     var w = width;
     var h = height;
     
