@@ -49,17 +49,21 @@ function draw() {
 		rect(width/2, height/2, width, height);
         text("1",  w/4, h/4);
         ellipse(475, 475, 50, 50);
+        image(squirrel, height/2, width/2, width/2, height/2);
 	} else if (mouseX < width/2 && mouseY > height/2) {
 		rect(0, height/2, width/2, height);
         text("2",  w/4, h/4);
         ellipse(225, 475, 50, 50);
+        image(squirrel, 0, height/2, width/2, height/2);
 	} else if (mouseX > width/2 && mouseY < height/2) {
 		rect(width/2, 0, width, height/2);
         text("4",  w/4, h/4);
         ellipse(475, 225, 50, 50);
+        image(squirrel, width/2, 0, width/2, height/2);
 	} else {
 		rect(0, 0, width/2, height/2);
         text("3",  w/4, h/4);
-        ellipse(225, 225, 50, 50);
+        ellipse(0, 0, 50, 50);
+        image(squirrel, 0, 0, width/2, height/2);
 	}
 }
