@@ -31,27 +31,35 @@ function draw() {
     //image(squirrel, 0, 0, width/2, height);
     //image(squirrel, width/2, 0, width/2, height);
     
-    var col = 255;
+    var col = color(255, 255, 255, 255);
     var size = 50;
     var font = "Impact";
-    var w = width;
-    var h = height;
     
     fill(col);
     textAlign(cenW, cenH);
     textSize(size);
-    textFont(font);
+    stroke(0);
     text("Did you said Nuts", w/2, h/2);
     
-    /* for each quandrant, determine of mouse 
-		is inside bounds */	
+    col = color(255, 255, 255, 127);
+    fill(col);
+    
+    /* four quandrant */	
 	if (mouseX > width/2 && mouseY > height/2) {
 		rect(width/2, height/2, width, height);
+        text("1",  w/4, h/4);
+        ellipse(475, 475, 50, 50);
 	} else if (mouseX < width/2 && mouseY > height/2) {
 		rect(0, height/2, width/2, height);
+        text("2",  w/4, h/4);
+        ellipse(225, 475, 50, 50);
 	} else if (mouseX > width/2 && mouseY < height/2) {
 		rect(width/2, 0, width, height/2);
+        text("4",  w/4, h/4);
+        ellipse(475, 225, 50, 50);
 	} else {
 		rect(0, 0, width/2, height/2);
+        text("3",  w/4, h/4);
+        ellipse(225, 225, 50, 50);
 	}
 }
