@@ -1,4 +1,4 @@
-/* Meme v 1 
+/* Meme v 2 
    By Moe Quinn
    10.18.2018
    Animation
