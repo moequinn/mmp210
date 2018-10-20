@@ -74,16 +74,19 @@ var font = "Impact";
         text("Got Nuts",  w - offsetw1, h - offseth1);
         //bottom right 1
         image(got, h/2, w/2, w/2, h/2);
+        
 	} else if (mouseX < w/2 && mouseY > h/2) {
 		rect(0, h/2, w/2, h);
         text("Going Nuts",  w - offsetw2, h - offseth2);
         //bottom left 2
         image(going, 0, h/2, w/2, h/2);
+        
 	} else if (mouseX > w/2 && mouseY < h/2) {
 		rect(w/2, 0, w, h/2);
         text("Did You Said Nuts",  w - offsetw4, h - offseth4);
         //top right 4
         image(squirrel, w/2, 0, w/2, h/2);
+        
 	} else {
 		rect(0, 0, w/2, h/2);
         text("Stack of Nuts",  w - offsetw3, h - offseth3);
@@ -94,6 +97,7 @@ var font = "Impact";
     image(float, x, y, 100, 100);
     image(glow, x2, 100, 100, 100);
     image(float, x, 100, 100, 100);
+    
 	x += speed;
 	if (x > w - 51 || x < 51) {
 		speed *= -1;
@@ -104,7 +108,7 @@ var font = "Impact";
         
     }
     
-    image(float, x, y, 100, 100);
+    image(glow, x, y, 100, 100);
 	x += 2;
 	y += 2;
 	if (x > width) {
