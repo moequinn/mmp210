@@ -9,10 +9,12 @@ body {
 
 h1 {
     font-size: 48px;
+    clear: both;
 }
 
 h2 {
     font-size: 36px;
+    clear: both;
 }
 
 p {
@@ -23,12 +25,13 @@ img {
     width: 100%;
 }
 
-.line {
+/*.line {
     padding: 1px;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    display: inline;
+    float: left;
 }
-
-
+*/
 .button {
     padding: 20px;
     font-size: 12px;
