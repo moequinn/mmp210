@@ -3,13 +3,15 @@
 */
 var slide = 0;
 var pong;
-var squirrel;
-var rabiit;
+//var squirrel;
+//var rabiit;
+var vs;
 
 function preload() {
     pong = loadImage("Pong.png");
-    squirrel = loadImage("squirrel1.jpg");
-    rabiit = loadImage("rabbit.jpg");
+    //squirrel = loadImage("squirrel1.jpg");
+    //rabiit = loadImage("rabbit.jpg");
+    vs = loadImage("squirrel_rabbit.jpg");
 }
 
 function setup() {
@@ -44,8 +46,9 @@ function draw() {
         
     } else if (slide == 3) {
         text("Theme: Squirrel VS Rabbit", 400, 20);
-        image(squirrel, 0, 100);
-        image(rabiit, 400, 100);
+        //image(squirrel, 0, 100);
+        //image(rabiit, 400, 100);
+        image(vs, 0, 50);
     }
 }
 
