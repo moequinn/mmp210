@@ -11,6 +11,7 @@ function player() {
         noStroke();
         fill(255);
         rect(this.pos.x, this.pos.y, this.w, this.h);
+       //image(, this.pos.x, this.pos.y)
     }
     
     this.up = function() {this.acc.y -= this.spd;}
