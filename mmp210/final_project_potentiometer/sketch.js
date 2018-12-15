@@ -35,17 +35,17 @@ var x = 320;
 var y = 180;
 var xspeed = 3;
 var yspeed = 3;
-var r = 25;
+var r = 25; // ball measurements
+var wr =60; // bball image measurements
 
 // images
 var squirrel;
 var rabbit1;
 var backgroundImage;
+var bballImage;
 
 
 // score board
-//var dots = [];
-//var dSize = 10;
 var txtSize = 30;
 
 var rabbitScore = 0;
@@ -57,7 +57,7 @@ var wall;
 var giggling;
 
 function preload() {
-
+    bat = loadSound('wall.mp3');    
     wall = loadSound('wall.mp3');
     giggling = loadSound('giggling-squirrel.mp3');
 
@@ -67,12 +67,12 @@ function preload() {
     squirrel1 = loadImage("squirrel1.png");
     rabbit1 = loadImage("rabbit1.png");
     backgroundImage = loadImage("background.jpg");
+    bballImage = loadImage("bball.png");
 
 }
 
 
 function setup() {
-    bat = loadSound('wall.mp3');
     createCanvas(800, 500);
 
     //image(backgroundImage, 0, 0);
@@ -119,7 +119,7 @@ function draw() {
    // background(20)
     
     
-    image(backgroundImage,0,0);
+    image(backgroundImage, 0, 0);
 
     var yPot = map(sensorValue, 0, 1023, height - hsquirrel, 0);
 
@@ -149,7 +149,10 @@ function draw() {
     fill(255);
 
     // Ball
+    fill(0);
+    
     ellipse(x, y, r * 1, r * 1);
+    image(bballImage, x - 25, y- 35, wr, wr);
 
     x += xspeed;
     y += yspeed;
@@ -203,16 +206,17 @@ drawScores();
 function reset() {
     x = 320;
     y = 180;
-    xspeed = 4;
-    yspeed = 5;
+    xspeed = 5;
+    yspeed = 6;
 }
 
 function drawScores() {
+    var hscore = 45;
 
     stroke(255);
     fill(255);
     textAlign(CENTER);
     textSize(30);
-    text(squirrelScore, width / 4, 45);
-    text(rabbitScore, width * 3 / 4, 45);
+    text(squirrelScore, width / 4, hscore);
+    text(rabbitScore, width * 3 / 4, hscore);
 }
