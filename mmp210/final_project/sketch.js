@@ -16,14 +16,16 @@ var txtSize = 30;
 //var BS = ; // Ball Sound
 //var BM = ; // Background Music
 //var PS = ; // Paddle Sound
-
+var bat;
+var wall;
 
 
 function preload() {
      //= loadSound("");
      //= loadSound("");
      // music = loadSound("music.mp3");
-    
+    wall = loadSound('wall.mp3');
+    bat = loadSound('wall.mp3');
 }
 
 function setup() {
@@ -58,11 +60,13 @@ function draw() {
     if (ball.pos.x > player.pos.x && ball.pos.x < player.pos.x + player.w &&
         ball.pos.y > player.pos.y && ball.pos.y < player.pos.y + player.h) {
         ball.acc.x *= -1;
+        wall.play();
     }
 
     if (ball.pos.x > ai.pos.x && ball.pos.x < ai.pos.x + ai.w &&
         ball.pos.y > ai.pos.y && ball.pos.y < ai.pos.y + ai.h) {
         ball.acc.x *= -1;
+        bat.play();
     }
     if (ball.pos.x > width - ball.r) {
         //ball.acc.x *= -1;
