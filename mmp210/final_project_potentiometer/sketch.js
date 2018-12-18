@@ -1,5 +1,5 @@
 /*
-    Arduino + p5 for the final project
+    Arduino + p5 for the final project 12-03-2018
 */
 var serial;
 var portName = "/dev/cu.usbmodem14101";
@@ -47,7 +47,6 @@ var bballImage;
 
 // score board
 var txtSize = 30;
-
 var rabbitScore = 0;
 var squirrelScore = 0;
 
@@ -57,13 +56,13 @@ var wall;
 var giggling;
 
 function preload() {
+    
+    // sounds
     bat = loadSound('wall.mp3');    
     wall = loadSound('wall.mp3');
     giggling = loadSound('giggling-squirrel.mp3');
-
-    //squirrel = loadImage("squirrel1.png");
-    //rabbit = loadImage("rabbit1.png");
-
+    
+    // images
     squirrel1 = loadImage("squirrel1.png");
     rabbit1 = loadImage("rabbit1.png");
     backgroundImage = loadImage("background.jpg");
